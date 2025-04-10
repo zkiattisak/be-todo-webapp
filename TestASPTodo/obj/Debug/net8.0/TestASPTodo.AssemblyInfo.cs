@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestASPTodo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05fe53ef7625fe3268667c7edbf645b31243e50c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eafc121cc131dde26349da2a86e73c39701635c8")]
 [assembly: System.Reflection.AssemblyProductAttribute("TestASPTodo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TestASPTodo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
