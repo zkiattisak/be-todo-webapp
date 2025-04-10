@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using TestASPTodo.Data;
 using TestASPTodo.Models;
 using TestASPTodo.Models.Entities;
+using TestASPTodo.Repository;
 
 namespace TestASPTodo.Controllers
 {
@@ -11,16 +12,19 @@ namespace TestASPTodo.Controllers
     public class EmployeesController : ControllerBase
     {
         private readonly ApplicationDbContext dbContext;
+        private readonly EmployeeRepository _employeeRepository;
 
-        public EmployeesController(ApplicationDbContext dbContext)
+        public EmployeesController(ApplicationDbContext dbContext , EmployeeRepository employeeRepository )
         { 
             this.dbContext = dbContext;
-         
+            _employeeRepository = employeeRepository;
+
         }
         [HttpGet]
-        public IActionResult GetAllEmployees()
+        public async Task<IActionResult> GetAllEmployees()
         {
-            return Ok(dbContext.Employees.ToList());
+            var employees = await _employeeRepository.GetAllEmployees();
+            return Ok(employees);
         }
 
         [HttpGet]

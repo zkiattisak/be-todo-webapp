@@ -1,39 +1,42 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Authentication.Repositories.Repository;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Data;
 using TestASPTodo.Data;
 using TestASPTodo.Models;
 using TestASPTodo.Models.Entities;
-using Dapper; // Make sure to install the Dapper NuGet package
+using Dapper;
+using Microsoft.Extensions.Configuration;
 
 namespace TestASPTodo.Repository
 {
-    public class EmployeeRepository : ControllerBase
+    public class EmployeeRepository : BaseRepository
     {
-        private readonly ApplicationDbContext dbContext;
+        private readonly ApplicationDbContext _dbContext;
+        private readonly ILogger<EmployeeRepository> _logger;  // Add logger
 
-        public EmployeeRepository(ApplicationDbContext dbContext)
+        public EmployeeRepository(ApplicationDbContext dbContext, IConfiguration config, ILogger<EmployeeRepository> logger) : base(config, logger) // Pass config and logger
         {
-            this.dbContext = dbContext;
+            _dbContext = dbContext;
+            _logger = logger; // Store the logger
         }
-
         public async Task<IEnumerable<Employee>> GetAllEmployees()
         {
             try
             {
-                using (var db = dbContext()) 
+                using (var db = CreateConnection())
                 {
                     var response = await db.QueryMultipleAsync(
-                        sql: "_p_M_Role_Get",
-                        commandType: CommandType.StoredProcedure
-                    );
-                    var result = (await response.ReadAsync<RoleListOut>()).ToList();
+                                            sql: "GetEmployee",
+                                            commandType: CommandType.StoredProcedure
+                                         );
+                    var result = (await response.ReadAsync<Employee>()).ToList();
                     return result;
                 }
             }
             catch (Exception ex)
             {
-                // Consider logging the exception for better debugging
+             
                 throw new Exception($"Error retrieving employees: {ex.Message}");
             }
         }

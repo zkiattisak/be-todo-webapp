@@ -174,6 +174,7 @@ F:\be-ASPTodo\be-todo-webapp\TestASPTodo\bin\Debug\net8.0\TestASPTodo.dll
 F:\be-ASPTodo\be-todo-webapp\TestASPTodo\bin\Debug\net8.0\TestASPTodo.pdb
 F:\be-ASPTodo\be-todo-webapp\TestASPTodo\bin\Debug\net8.0\Azure.Core.dll
 F:\be-ASPTodo\be-todo-webapp\TestASPTodo\bin\Debug\net8.0\Azure.Identity.dll
+F:\be-ASPTodo\be-todo-webapp\TestASPTodo\bin\Debug\net8.0\Dapper.dll
 F:\be-ASPTodo\be-todo-webapp\TestASPTodo\bin\Debug\net8.0\Humanizer.dll
 F:\be-ASPTodo\be-todo-webapp\TestASPTodo\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 F:\be-ASPTodo\be-todo-webapp\TestASPTodo\bin\Debug\net8.0\Microsoft.Build.Locator.dll

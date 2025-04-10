@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "l6QG5goZRP0=",
+  "dgSpecHash": "q4HI9ynz/jM=",
   "success": true,
   "projectFilePath": "F:\\be-ASPTodo\\be-todo-webapp\\TestASPTodo\\TestASPTodo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zaram\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\zaram\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\zaram\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
     "C:\\Users\\zaram\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\zaram\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\zaram\\.nuget\\packages\\microsoft.build.framework\\17.8.3\\microsoft.build.framework.17.8.3.nupkg.sha512",
