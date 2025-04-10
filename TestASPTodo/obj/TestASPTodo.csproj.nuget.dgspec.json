@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\be-ASPTodo\\TestASPTodo\\TestASPTodo\\TestASPTodo.csproj": {}
+    "F:\\be-ASPTodo\\be-todo-webapp\\TestASPTodo\\TestASPTodo.csproj": {}
   },
   "projects": {
-    "F:\\be-ASPTodo\\TestASPTodo\\TestASPTodo\\TestASPTodo.csproj": {
+    "F:\\be-ASPTodo\\be-todo-webapp\\TestASPTodo\\TestASPTodo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\be-ASPTodo\\TestASPTodo\\TestASPTodo\\TestASPTodo.csproj",
+        "projectUniqueName": "F:\\be-ASPTodo\\be-todo-webapp\\TestASPTodo\\TestASPTodo.csproj",
         "projectName": "TestASPTodo",
-        "projectPath": "F:\\be-ASPTodo\\TestASPTodo\\TestASPTodo\\TestASPTodo.csproj",
+        "projectPath": "F:\\be-ASPTodo\\be-todo-webapp\\TestASPTodo\\TestASPTodo.csproj",
         "packagesPath": "C:\\Users\\zaram\\.nuget\\packages\\",
-        "outputPath": "F:\\be-ASPTodo\\TestASPTodo\\TestASPTodo\\obj\\",
+        "outputPath": "F:\\be-ASPTodo\\be-todo-webapp\\TestASPTodo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
